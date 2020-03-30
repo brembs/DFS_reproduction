@@ -1,0 +1,38 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "license": "https://spdx.org/licenses/AGPL-3.0",
+    "dateCreated": "2020-03-30",
+    "datePublished": "2020-03-30",
+    "name": "Reproducing DFS data from 1997",
+    "description": "This is a repository to contribute to a reproduction effort of data that is older than ten years: https://github.com/ReScience/ten-years",
+    "applicationCategory": "Neurobiology",
+    "referencePublication": "https://doi.org/10.1101/lm.7.2.104",
+    "keywords": [
+        "operant conditioning",
+        "classical conditioning",
+        "Drosophila",
+        "Drosophila Flight Simulator"
+    ],
+    "programmingLanguage": [
+        "C++",
+        "Turbo Pascal",
+        "R"
+    ],
+    "operatingSystem": [
+        "Windows"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "@id": "http://orcid.org/0000-0001-7824-7650",
+            "givenName": "Brembs",
+            "familyName": "Björn",
+            "email": "bjoern@brembs.net",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "University of Regensburg, Institute of Zoology - Neurogenetics"
+            }
+        }
+    ]
+}
