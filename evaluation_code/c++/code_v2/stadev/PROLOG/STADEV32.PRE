@@ -1,0 +1,273 @@
+/*****************************************************************************
+*   Visual Prolog Header File for STATISTICA Development Environment         *
+*   Copyright (c) 2001 by StatSoft Russia                                    *
+*****************************************************************************/
+
+ifndef _STADEV_H
+
+CONSTANTS
+
+_STADEV_H	= defined
+
+CONSTANTS
+
+API_EXP		= stdcall
+
+GLOBAL DOMAINS
+
+HSTAFILE	= long
+HRES		= short
+
+LPSTR		= STRING
+LPCSTR		= STRING
+Double		= REAL
+ArrayOfDoubles	= BINARY
+
+CONSTANTS
+
+staMax_NVars		= 4092
+staMax_VarNameLen	= 8
+staMax_LongVarNameLen   = 128
+staMax_CaseNameLen	= 20
+staMax_SLabelLen	= 8
+staMax_LLabelLen	= 40
+staMax_HeaderLen	= 80
+staMax_NB_SLab		= 2200
+staMax_NB_LLab		= 720
+
+res_OK			= 1
+res_Err			= 0
+
+GLOBAL PREDICATES
+
+procedure
+long		StaDevVersion()	language API_EXP
+
+procedure
+HSTAFILE	StaOpenFile(LPCSTR szFileName)	language API_EXP
+
+procedure
+HSTAFILE
+		StaCreateFile(
+			short NVars,
+			long NCases,
+			LPCSTR szFileName)	language API_EXP
+
+procedure
+HRES		StaCloseFile(HSTAFILE hSF)	language API_EXP
+
+procedure
+short		StaGetNVars(HSTAFILE hSF)	language API_EXP
+
+procedure
+long		StaGetNCases(HSTAFILE hSF)	language API_EXP
+
+procedure
+HRES		StaAddVars(
+			HSTAFILE hSF,
+			short After,
+			short HowMany)		language API_EXP
+
+procedure
+HRES		StaDeleteVars(
+			HSTAFILE hSF,
+			short From,
+			short To)		language API_EXP
+
+procedure
+HRES		StaAddCases(
+			HSTAFILE hSF,
+			long After,
+			long HowMany)		language API_EXP
+
+procedure
+HRES		StaDeleteCases(
+			HSTAFILE hSF,
+			long From,
+			long To)		language API_EXP
+
+procedure
+HRES		StaSetFileHeader(
+			HSTAFILE hSF,
+			LPCSTR szHeader)	language API_EXP
+
+procedure
+HRES		StaGetFileHeader(
+			HSTAFILE hSF,
+			LPSTR szHeader,
+			short BL)		language API_EXP
+
+procedure
+HRES		StaSetVarName(
+			HSTAFILE hSF,
+			short Var,
+			LPCSTR szName)		language API_EXP
+
+procedure
+HRES		StaGetVarName(
+			HSTAFILE hSF,
+			short Var,
+			LPSTR szName)		language API_EXP
+
+procedure
+HRES		StaSetVarLongName(
+			HSTAFILE hSF,
+			short Var,
+			LPCSTR szLongName)	language API_EXP
+
+procedure
+HRES		StaGetVarLongName(
+			HSTAFILE hSF,
+			short Var,
+			LPSTR szLongName,
+			short BL)		language API_EXP
+
+procedure
+HRES		StaSetVarFormat(
+			HSTAFILE hSF,
+			short Var,
+			short width,
+			short dec,
+			short categ,
+			short display)		language API_EXP
+
+procedure
+HRES		StaGetVarFormat(
+			HSTAFILE hSF,
+			short Var,
+			short lpWidth,
+			short lpDec,
+			short lpCateg,
+			short lpDisplay) - (i,i,o,o,o,o)
+						language API_EXP
+
+procedure
+HRES		StaSetVarMD(
+			HSTAFILE hSF,
+			short Var,
+			Double MDValue)		language API_EXP
+
+procedure
+HRES		StaGetVarMD(
+			HSTAFILE hSF,
+			short Var,
+			Double lpMDVal) - (i,i,o)
+						language API_EXP
+
+procedure
+HRES		StaGetAllMD(
+			HSTAFILE hSF,
+			ArrayOfDoubles lpMD) - (i,i)
+						language API_EXP
+
+procedure
+HRES		StaSetCaseNameLength(
+			HSTAFILE hSF,
+			short CNLen)		language API_EXP
+
+procedure
+short		StaGetCaseNameLength(
+			HSTAFILE hSF)		language API_EXP
+
+procedure
+HRES		StaSetCaseName(
+			HSTAFILE hSF,
+			long Case,
+			LPCSTR szName)		language API_EXP
+
+procedure
+HRES		StaGetCaseName(
+			HSTAFILE hSF,
+			long Case,
+			LPSTR szName,
+			short BL)		language API_EXP
+
+procedure
+HRES		StaSetData(
+			HSTAFILE hSF,
+			short Var,
+			long Case,
+			Double Value)		language API_EXP
+
+procedure
+HRES		StaGetData(
+			HSTAFILE hSF,
+			short Var,
+			long Case,
+			Double lpValue) - (i,i,i,o)
+						language API_EXP
+
+procedure
+HRES		StaSetCaseData(
+			HSTAFILE hSF,
+			long Case,
+			ArrayOfDoubles lpCaseConst) - (i,i,i)
+						language API_EXP
+procedure
+HRES		StaGetCaseData(
+			HSTAFILE hSF,
+			long Case,
+			ArrayOfDoubles lpCase) - (i,i,i)
+						language API_EXP
+procedure
+HRES		StaGetLabelForValue(
+			HSTAFILE hSF,
+			short Var,
+			Double Value,
+			LPSTR szLabel)		language API_EXP
+
+procedure
+HRES		StaGetLongLabelForValue(
+			HSTAFILE hSF,
+			short Var,
+			Double Value,
+			LPSTR szLLabel,
+			short BL)		language API_EXP
+
+procedure
+HRES		StaGetValueForLabel(
+			HSTAFILE hSF,
+			short Var,
+			LPCSTR szLabel,
+			Double lpValue) - (i,i,i,o)
+						language API_EXP
+
+procedure
+HRES		StaAddLabel(
+			HSTAFILE hSF,
+			short Var,
+			Double Value,
+			LPCSTR szLabel,
+			LPCSTR szLongLabel)
+						language API_EXP
+
+procedure
+HRES		StaDeleteLabelForValue(
+			HSTAFILE hSF,
+			short Var,
+			Double Value)		language API_EXP
+
+procedure
+HRES		StaDeleteLabel(
+			HSTAFILE hSF,
+			short Var,
+			LPCSTR szLabel)		language API_EXP
+
+procedure
+HRES		StaGetNumVarLabels(
+			HSTAFILE hSF,
+			short Var,
+			short lpNumLabels) - (i,i,o)
+						language API_EXP
+
+procedure
+HRES		StaGetVarLabelByIndex(
+			HSTAFILE hSF,
+			short Var,
+			short index,
+			Double lpValue,
+			LPSTR szLabel,
+			LPSTR szLongLabel) - (i,i,i,o,i,i)
+						language API_EXP
+
+enddef

@@ -1,0 +1,42 @@
+// MAKEHELP.BAT generated Help Map file.  Used by DFS.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_VIEW_TIMETRACES                     0x18003
+HID_VIEW_POSITIONHISTO                  0x18004
+HID_VIEW_FIXATIONHISTO                  0x18005
+HID_VIEW_PERFORMANCEINDICEES            0x18006
+HID_VIEW_EXPERIMENTOVERVIEW             0x18007
+HID_VIEW_MULTI_EXP_LST_OV               0x18009
+HID_VIEW_MULTI_EXP_PERF_HISTO           0x1800A
+HID_VIEW_MULTI_EXP_POS_HISTO            0x1800C
+HID_VIEW_SETFONT                        0x1800D
+HID_FILE_EXPORTINDICES                  0x1800E
+HID_EXPORT_INDICES                      0x1800F
+HID_FILE_EXPORT_INDICES                 0x18010
+HID_VIEW_DWELLINGTIMES                  0x18011
+HID_VIEW_MULTI_DWELLINGTIMES            0x18015
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_DFSTYPE                            0x20081
+HIDR_INF                                0x20082
+HIDR_INF_TIMETRACE                      0x20083
+HIDR_INF_PERFINDEX                      0x20084
+HIDR_ELS                                0x20085
+HIDR_ELS_PERFINDEX                      0x20086
+HIDR_INF_DWELL                          0x20087
+HIDR_ELS_DWELL                          0x20094
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_VIEW_INF                           0x20082
+HIDD_VIEW_TIMETRACE                     0x20085
+HIDD_VIEW_PERFINDEX                     0x20088
+HIDD_VIEW_M_PERFINDEX                   0x2008C
+HIDD_EXPORT_INDICES                     0x2008F
+HIDD_VIEW_DWELL                         0x20090
+HIDD_VIEW_ELS_DWELL                     0x20095
+ 
+// Frame Controls (IDW_*) 

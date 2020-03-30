@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: Dfs - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOCUME~1\brembs\LOCALS~1\Temp\RSP51.tmp" mit Inhalten
+[
+NSViews\Release\NSViews.lib StaDev\32BIT\Stadev32.lib /nologo /subsystem:windows /incremental:no /pdb:".\Release/Dfs.pdb" /machine:I386 /out:".\Release/Dfs.exe" 
+".\Release\Array_f.obj"
+".\Release\Dfs.obj"
+".\Release\DfsDoc.obj"
+".\Release\DfsExperiment.obj"
+".\Release\ElsDoc.obj"
+".\Release\ElsExportPI.obj"
+".\Release\ElsPropPageExperimentList.obj"
+".\Release\ElsPropPageFixation.obj"
+".\Release\ElsPropPagePerformance.obj"
+".\Release\ElsPropPageTorquePI.obj"
+".\Release\ElsPropSheetView.obj"
+".\Release\ElsPropSheetViewFrm.obj"
+".\Release\InfDoc.obj"
+".\Release\InfPropPageOverview.obj"
+".\Release\InfPropPagePerformance.obj"
+".\Release\InfPropSheetView.obj"
+".\Release\InfPropSheetViewFrm.obj"
+".\Release\IntroView.obj"
+".\Release\IntroViewFrm.obj"
+".\Release\MainFrm.obj"
+".\Release\StdAfx.obj"
+".\Release\Dfs.res"
+]
+Erstellen der Befehlzeile "link.exe @C:\DOCUME~1\brembs\LOCALS~1\Temp\RSP51.tmp"
+<h3>Ausgabefenster</h3>
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+Dfs.exe - 0 Fehler, 0 Warnung(en)
+</pre>
+</body>
+</html>

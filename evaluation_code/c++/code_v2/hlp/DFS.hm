@@ -1,0 +1,33 @@
+// MAKEHELP.BAT generated Help Map file.  Used by DFS.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_PROP_SHEET_APPLY                    0x10065
+HID_BUTTON_COMPILE_SCRIPT               0x103F1
+HID_DEMO_FLEXIBLE_DIALOG                0x18003
+HID_DEMO_FLEXIBLE_PROPERTY_SHEET        0x18004
+HID_DEMO_FLEXIBLE_FORM_VIEW             0x18005
+HID_DEMO_FLEXIBLEPROPERTY_SHEET_VIEW    0x18006
+HID_DEMO_INTRODUCTION                   0x18007
+HID_DEMO_FLEXIBLE_PROPERTY_SHEET_VIEW   0x18008
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_NSVIEWTYPE                         0x20081
+HIDR_INFTYPE                            0x20082
+HIDR_ELSTYPE                            0x2008E
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_FORM1                              0x20083
+HIDD_PP_ELS_PERFORMANCE                 0x20084
+HIDD_PP_ELS_FIXATION                    0x20085
+HIDD_FORM2                              0x20086
+HIDD_PP_ELS_EXPERIMENTLIST              0x2008A
+HIDD_PP_INF_OVERVIEW                    0x2008B
+HIDD_PP_INF_PERFORMANCE                 0x2008D
+HIDD_EXPORT_PI                          0x2008F
+HIDD_PP_ELS_NEW                         0x20091
+ 
+// Frame Controls (IDW_*) 

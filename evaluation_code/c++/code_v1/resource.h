@@ -1,0 +1,127 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by DFS.rc
+//
+#define IDD_ABOUTBOX                    100
+#define IDC_INF_EXPERIMENT_NAME         101
+#define CG_IDS_PHYSICAL_MEM             102
+#define CG_IDS_DISK_SPACE               103
+#define CG_IDS_DISK_SPACE_UNAVAIL       104
+#define IDC_INF_DATE                    108
+#define IDC_INF_TIME                    109
+#define IDC_INF_FLY                     110
+#define IDC_INF_REMARKS                 111
+#define IDC_INF_NOFFILES                114
+#define IDC_INF_NOFRECORDS              115
+#define IDC_INF_NOFDATA                 116
+#define IDC_INF_HEATEDPATTERN           117
+#define IDR_MAINFRAME                   128
+#define IDR_DFSTYPE                     129
+#define IDD_VIEW_INF                    130
+#define IDR_INF                         130
+#define IDB_DROSO_BMP                   131
+#define IDB_FLIGHTSIMULATOR             131
+#define IDR_INF_TIMETRACE               131
+#define IDR_INF_PERFINDEX               132
+#define IDD_VIEW_TIMETRACE              133
+#define IDR_ELS                         133
+#define IDR_ELS_PERFINDEX               134
+#define IDB_DROSO_HEAD                  135
+#define IDR_INF_DWELL                   135
+#define IDD_VIEW_PERFINDEX              136
+#define IDI_HEAT_0_180                  138
+#define IDI_HEAT_90_270                 139
+#define IDI_HEAT_0_180small             140
+#define IDD_VIEW_M_PERFINDEX            140
+#define IDI_HEAT_90_270small            141
+#define IDB_HEAT_0_180                  141
+#define IDB_HEAT_90_270                 142
+#define IDD_EXPORT_INDICES              143
+#define IDD_VIEW_DWELL                  144
+#define IDR_ELS_DWELL                   148
+#define IDD_VIEW_ELS_DWELL              149
+#define IDC_PHYSICAL_MEM                1000
+#define IDC_DISK_SPACE                  1001
+#define IDC_FRAME_TIMETRACE             1007
+#define IDC_SB_TIME                     1011
+#define IDC_CHECK_POSITIONTRACE         1013
+#define IDC_CHECK_TORQUETRACE           1014
+#define IDC_FRAME_EXPMODE               1015
+#define IDC_DEBUG                       1016
+#define IDC_BTN_POSTRACE_CLR            1017
+#define IDC_BTN_TRQTRACE_CLR            1018
+#define IDC_FRAME_POSCOLOR              1019
+#define IDC_FRAME_TRQCOLOR              1020
+#define IDC_LIST_PERF_INDICEES          1025
+#define IDC_CHECK_SUB_PREF              1026
+#define IDC_FRAME_PERF_INDEX            1028
+#define IDC_INF_NOFPERIODS              1029
+#define IDC_ICON_HEAT                   1030
+#define IDC_BMP_HEAT                    1030
+#define IDC_HEAT_0_180                  1031
+#define IDC_HEAT_90_270                 1032
+#define IDC_PREFERENCE                  1036
+#define IDC_LB_EXP_NAMES                1038
+#define IDC_ED_N_0_180                  1039
+#define IDC_ED_N_OF_FILES               1041
+#define IDC_ED_N_90_270                 1042
+#define IDC_LB_PERF_INDICES             1043
+#define IDC_CHECK_WEIGHTED_INDICES      1045
+#define IDC_FRAME_MULT_PERF_IND         1046
+#define IDC_EXPORT_FORMAT               1048
+#define IDC_EXPORT_FORMAT_2             1049
+#define IDC_EXPORT_FORMAT_3             1050
+#define IDC_WEIGHT_AREATANH             1052
+#define IDC_MESSAGE                     1053
+#define IDC_START_EXPORT                1054
+#define IDC_EXPORT_FILE_PATH            1055
+#define IDC_BTN_EXPORT_DESTINATION      1056
+#define IDC_POS_RANGE                   1058
+#define IDC_POS_RANGE_2                 1059
+#define IDC_DETECTED_2048               1060
+#define IDC_DETECTED_1800               1061
+#define IDC_RECALC                      1062
+#define IDC_EXPORT_PERFORMANCE          1065
+#define IDC_EXPORT_DWELLINGS            1066
+#define IDC_BLOCK_NO                    1067
+#define IDC_SPIN_BLOCKNO                1068
+#define IDC_BLOCK_TYPE                  1069
+#define IDC_FRAME_DIAGRAM               1070
+#define IDC_SPINBUDDY_BLOCK_NO          1071
+#define IDC_RADIO_HOT_COLD              1073
+#define IDC_RADIO_HOT_COLD1             1074
+#define IDC_MEAN_DWELL_COLD             1075
+#define IDC_MEAN_DWELL_HOT              1076
+#define IDC_TIME_RESOLUTION             1077
+#define IDC_SPIN_RESOLUTION             1078
+#define IDC_RADIO_X_LIN_LOG             1079
+#define IDC_RADIO_X_LIN_LOG2            1080
+#define IDC_SPINBUDDY_TIME_RESOLUTION   1081
+#define IDC_RADIO_HOT_COLD2             1082
+#define IDC_BUTTON1                     1083
+#define ID_VIEW_TIMETRACES              32771
+#define ID_VIEW_POSITIONHISTO           32772
+#define ID_VIEW_FIXATIONHISTO           32773
+#define ID_VIEW_PERFORMANCEINDICEES     32774
+#define ID_VIEW_EXPERIMENTOVERVIEW      32775
+#define ID_VIEW_MULTI_EXP_LST_OV        32777
+#define ID_VIEW_MULTI_EXP_PERF_HISTO    32778
+#define ID_VIEW_MULTI_EXP_POS_HISTO     32780
+#define ID_VIEW_SETFONT                 32781
+#define ID_FILE_EXPORTINDICES           32782
+#define ID_EXPORT_INDICES               32783
+#define ID_FILE_EXPORT_INDICES          32784
+#define ID_VIEW_DWELLINGTIMES           32785
+#define ID_VIEW_MULTI_DWELLINGTIMES     32789
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_3D_CONTROLS                     1
+#define _APS_NEXT_RESOURCE_VALUE        150
+#define _APS_NEXT_COMMAND_VALUE         32790
+#define _APS_NEXT_CONTROL_VALUE         1084
+#define _APS_NEXT_SYMED_VALUE           106
+#endif
+#endif

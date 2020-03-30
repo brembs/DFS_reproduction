@@ -1,0 +1,905 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EXPORT_PI DIALOG DISCARDABLE  20, 40, 196, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Performance Indices (PI)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Export format: ",IDC_STATIC,4,2,188,36
+    CONTROL         "&ASCII table (*.txt)",IDC_EXPORT_FORMAT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,14,96,8
+    CONTROL         "&Statistica (*.sta)",IDC_EXPORT_FORMAT_2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,12,26,96,8
+    GROUPBOX        "Destination: ",IDC_STATIC,4,40,188,26,WS_GROUP
+    EDITTEXT        IDC_EXPORT_FILE_PATH,8,50,164,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_EXPORT_DESTINATION,176,50,12,12
+    CONTROL         "",IDC_EXPORT_MESSAGE,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,8,68,184,20
+    PUSHBUTTON      "&Export",IDC_START_EXPORT,100,96,44,12
+    PUSHBUTTON      "&Close",IDCANCEL,148,96,44,12
+END
+
+IDD_EXPORT_FI DIALOG DISCARDABLE  20, 40, 196, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Fixation Indices (FI)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Export format: ",IDC_STATIC,4,2,188,36
+    CONTROL         "&ASCII table (*.txt)",IDC_EXPORT_FORMAT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,14,96,8
+    CONTROL         "&Statistica (*.sta)",IDC_EXPORT_FORMAT_2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,12,26,96,8
+    GROUPBOX        "Destination: ",IDC_STATIC,4,40,188,26,WS_GROUP
+    EDITTEXT        IDC_EXPORT_FILE_PATH,8,50,164,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_EXPORT_DESTINATION,176,50,12,12
+    CONTROL         "",IDC_EXPORT_MESSAGE,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,8,68,184,20
+    PUSHBUTTON      "&Export",IDC_START_EXPORT,100,96,44,12
+    PUSHBUTTON      "&Close",IDCANCEL,148,96,44,12
+END
+
+IDD_EXPORT_TI DIALOG DISCARDABLE  20, 40, 196, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Torque Indices (TI)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Export format: ",IDC_STATIC,4,2,188,36
+    CONTROL         "&ASCII table (*.txt)",IDC_EXPORT_FORMAT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,14,96,8
+    CONTROL         "&Statistica (*.sta)",IDC_EXPORT_FORMAT_2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,12,26,96,8
+    GROUPBOX        "Destination: ",IDC_STATIC,4,40,188,26,WS_GROUP
+    EDITTEXT        IDC_EXPORT_FILE_PATH,8,50,164,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_EXPORT_DESTINATION,176,50,12,12
+    CONTROL         "",IDC_EXPORT_MESSAGE,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,8,68,184,20
+    PUSHBUTTON      "&Export",IDC_START_EXPORT,100,96,44,12
+    PUSHBUTTON      "&Close",IDCANCEL,148,96,44,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_EXPORT_PI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_EXPORT_FI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_EXPORT_TI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PP_ELS_FIXATION DIALOG DISCARDABLE  0, 0, 368, 201
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Fixation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_FRAME_ELS_FIXATION,"Static",SS_BLACKFRAME | 
+                    SS_SUNKEN,20,4,204,144
+    GROUPBOX        "Display: ",IDC_STATIC_ELSPP3_2,236,0,132,56
+    EDITTEXT        IDC_EDIT_ELS_DISPLAYED_BLOCK,268,12,86,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "Spin1",IDC_SPIN_ELS_DISPLAYED_BLOCK,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ARROWKEYS | WS_TABSTOP,354,12,9,12
+    EDITTEXT        IDC_EDIT_ELS_SPINBUDDY_BLOCK,186,12,28,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_VISIBLE | NOT WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ELS_DISPLAY_RESOLUTION,268,26,96,64,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Block:",IDC_STATIC_ELSPP3_3,240,14,24,8,NOT WS_GROUP
+    LTEXT           "Res.:",IDC_STATIC_ELSPP3_5,240,28,24,8,NOT WS_GROUP
+    GROUPBOX        "Fixation indices: ",IDC_STATIC_ELSPP3_1,236,124,132,76
+    LISTBOX         IDC_LIST_ELS_FIXATON_INDICES,240,136,124,60,
+                    LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "Reinforcement selection: ",IDC_STATIC_ELSPP3_4,236,58,
+                    132,64
+    CONTROL         "&0°/180° only",IDC_RADIO_ELS_HEAT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,240,70,76,10
+    CONTROL         "&90°/270° only",IDC_RADIO_ELS_HEAT2,"Button",
+                    BS_AUTORADIOBUTTON,240,82,76,10
+    CONTROL         "&both",IDC_RADIO_ELS_HEAT3,"Button",BS_AUTORADIOBUTTON,
+                    240,96,76,10
+    EDITTEXT        IDC_EDIT_ELS_N_REINF_0180,340,68,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_GROUP | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ELS_N_REINF_90270,340,81,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ELS_N_ALL_FILES,340,94,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "&Superimpose equivalent quadrants",
+                    IDC_CHECK_ELS_HALF_ARENA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,240,44,124,8
+    CONTROL         "&Align heated quadrants",IDC_CHECK_ELS_SUPERIMPOSED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,240,110,124,8
+    PUSHBUTTON      "&Export Indices",IDC_BUTTON_ELS_EXPORT_FI,180,184,52,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 244, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DFS"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,188,76,48,12,WS_GROUP
+    LTEXT           "DFS - Drosophila Flight Simulator",IDC_STATIC,8,4,164,8,
+                    SS_NOPREFIX
+    LTEXT           "Ver. 2.0 for Win95/NT   Copyright © 07. - 11.1997",
+                    IDC_STATIC,8,32,164,8
+    LTEXT           "Department of Genetics, University of Würzburg",
+                    IDC_STATIC,8,56,152,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,4,68,
+                    236,1
+    CONTROL         137,IDC_STATIC,"Static",SS_BITMAP,177,4,59,36,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "Experiment evaluation program",IDC_STATIC,8,14,164,8,
+                    SS_NOPREFIX
+END
+
+IDD_PP_ELS_EXPERIMENTLIST DIALOG DISCARDABLE  0, 0, 312, 207
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Script"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Compile script",ID_BUTTON_COMPILE_SCRIPT,4,188,60,14
+    EDITTEXT        IDC_EDIT_ELS_EXPERIMENTSCRIPT,0,4,220,180,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        " Experiment names: ",IDC_STATIC_ELSPP1_1,224,0,88,206
+    EDITTEXT        IDC_EDIT_ELS_N_0_180,280,172,28,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "No. of files: ",IDC_STATIC_ELSPP1_2,228,142,40,10
+    EDITTEXT        IDC_EDIT_ELS_N_OF_FILES,280,140,28,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Heat 0/180°:",IDC_STATIC_ELSPP1_4,228,174,48,10
+    EDITTEXT        IDC_EDIT_ELS_N_90_270,280,188,28,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Heat 90/270°:",IDC_STATIC_ELSPP1_5,228,190,48,10
+    LISTBOX         IDC_LIST_ELS_EXPERIMENTNAMES,228,10,80,126,
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Files ok: ",IDC_STATIC_ELSPP1_3,228,158,40,10
+    EDITTEXT        IDC_EDIT_ELS_FILES_OK,280,156,28,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "",IDC_STATIC_ELSPP1_MESSAGE,72,192,148,10
+END
+
+IDD_PP_INF_OVERVIEW DIALOG DISCARDABLE  0, 0, 257, 159
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Overview"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "INF Overview Property Page",IDC_STATIC,9,29,203,8
+END
+
+IDD_PP_INF_PERFORMANCE DIALOG DISCARDABLE  0, 0, 242, 137
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Performance"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "INF Performance Property Page",IDC_STATIC,24,28,184,8
+END
+
+IDD_PP_ELS_PERFORMANCE DIALOG DISCARDABLE  0, 0, 380, 201
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Performance"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Performance indices: ",IDC_STATIC_ELSPP2_1,248,0,132,
+                    200
+    CONTROL         "",IDC_FRAME_ELS_PERFORMANCE,"Static",SS_BLACKFRAME | 
+                    SS_SUNKEN,20,4,216,144
+    LISTBOX         IDC_LIST_ELS_PERFINDICES,252,10,124,80,
+                    LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Preference &substracted",IDC_CHECK_ELS_SUBPREF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,252,108,104,8
+    CONTROL         "&Transformed indices (artanh)",
+                    IDC_CHECK_ELS_TRANSFORMARTANH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,252,96,104,8
+    CONTROL         "Incl. &positive preference",IDC_CHECK_ELS_POSPREF,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,128,100,8
+    CONTROL         "Incl. &negative preference",IDC_CHECK_ELS_NEGPREF,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,142,100,8
+    CONTROL         "Incl. reinforced at &0/180°",IDC_CHECK_ELS_HEAT0180,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,159,100,8
+    CONTROL         "Incl. reinforced at &90/270°",IDC_CHECK_ELS_HEAT90270,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,173,100,8
+    EDITTEXT        IDC_EDIT_ELS_N_POS_PREF,352,125,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ELS_N_NEG_PREF,352,139,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ELS_N_REINF_0180,352,156,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ELS_N_REINF_90270,352,170,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Included files:",IDC_STATIC_ELSPP2_2,300,189,44,8
+    EDITTEXT        IDC_EDIT_ELS_N_ALL_FILES,352,186,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "&Export Indices",IDC_BUTTON_ELS_EXPORT_PI,192,184,52,14
+END
+
+IDD_PP_ELS_TORQUEPI DIALOG DISCARDABLE  0, 0, 389, 209
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "TorquePI"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Performance indices: ",IDC_STATIC_ELSPP2_1,248,0,132,
+                    200
+    CONTROL         "",IDC_FRAME_ELS_PERFORMANCE,"Static",SS_BLACKFRAME | 
+                    SS_SUNKEN,20,4,216,144
+    LISTBOX         IDC_LIST_ELS_PERFINDICES,252,10,124,80,
+                    LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Preference &substracted",IDC_CHECK_ELS_SUBPREF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,252,108,104,8
+    CONTROL         "&Transformed indices (artanh)",
+                    IDC_CHECK_ELS_TRANSFORMARTANH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,252,96,104,8
+    CONTROL         "Incl. &positive preference",IDC_CHECK_ELS_POSPREF,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,128,100,8
+    CONTROL         "Incl. &negative preference",IDC_CHECK_ELS_NEGPREF,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,142,100,8
+    CONTROL         "Incl. reinforced at neg. torq.",IDC_CHECK_ELS_HEAT0180,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,159,100,8
+    CONTROL         "Incl. reinforced at pos. torq.",IDC_CHECK_ELS_HEAT90270,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,173,100,8
+    EDITTEXT        IDC_EDIT_ELS_N_POS_PREF,352,125,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ELS_N_NEG_PREF,352,139,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ELS_N_REINF_0180,352,156,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ELS_N_REINF_90270,352,170,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Included files:",IDC_STATIC_ELSPP2_2,300,189,44,8
+    EDITTEXT        IDC_EDIT_ELS_N_ALL_FILES,352,186,24,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "&Export Indices",IDC_BUTTON_ELS_EXPORT_PI,192,184,52,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PP_ELS_FIXATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 12
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PP_ELS_EXPERIMENTLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_PP_INF_OVERVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_PP_INF_PERFORMANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_PP_ELS_PERFORMANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        BOTTOMMARGIN, 196
+        HORZGUIDE, 150
+    END
+
+    IDD_PP_ELS_TORQUEPI, DIALOG
+    BEGIN
+        LEFTMARGIN, 12
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Dfs.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_NSVIEWTYPE          ICON    DISCARDABLE     "res\\DfsDoc.ico"
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\idr_main.ico"
+IDR_INFTYPE             ICON    DISCARDABLE     "res\\idr_inft.ico"
+IDR_ELSTYPE             ICON    DISCARDABLE     "res\\droso.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_FLIGHTSIMULATOR     BITMAP  DISCARDABLE     "RES\\droso.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Help &Index",                 ID_HELP_INDEX
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DFS...",               ID_APP_ABOUT
+    END
+END
+
+IDR_NSVIEWTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Demo"
+    BEGIN
+        MENUITEM "&Introduction",               ID_DEMO_INTRODUCTION
+        MENUITEM SEPARATOR
+        MENUITEM "Flexible &Dialog...",         ID_DEMO_FLEXIBLE_DIALOG
+        MENUITEM "Flexible &Property Sheet...", ID_DEMO_FLEXIBLE_PROPERTY_SHEET
+
+        MENUITEM "Flexible &Form View",         ID_DEMO_FLEXIBLE_FORM_VIEW
+        MENUITEM "Flexible Property &Sheet View", 
+                                                ID_DEMO_FLEXIBLE_PROPERTY_SHEET_VIEW
+
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About DFS...",               ID_APP_ABOUT
+    END
+END
+
+IDR_INFTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Preferences",                ID_DEMO_INTRODUCTION
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DFS...",               ID_APP_ABOUT
+    END
+END
+
+IDR_ELSTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Preferences",                ID_DEMO_INTRODUCTION
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DFS...",               ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Dfs MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Dfs\0"
+            VALUE "LegalCopyright", "Copyright © 1996\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Dfs.EXE\0"
+            VALUE "ProductName", "Dfs Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PP_ELS_FIXATION DLGINIT
+BEGIN
+    IDC_COMBO_ELS_DISPLAY_RESOLUTION, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "DFS"
+    IDR_NSVIEWTYPE          "\nDFS\n\n\n.dfs\nDFS.Intro\nDFS Intro"
+    IDR_INFTYPE             "\nINF\n\nDFS Single Experiment (*.inf)\n.inf\nDFS.SingleExperimentData\nDFS Single Experiment Data"
+    IDR_ELSTYPE             "\nELS\nExperiment Listing\nDFS Experiment Listing (*.els)\n.els\nDFS.ExperimentListing\nDFS Experiment Listing"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "DFS - Drosophila Flightsimulator"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DEMO_FLEXIBLE_DIALOG "Open a sample flexible dialog (CNSFlexDialog)"
+    ID_DEMO_FLEXIBLE_PROPERTY_SHEET 
+                            "Open a sample flexible property sheet (CNSFlexPropertySheet)"
+    ID_DEMO_FLEXIBLE_FORM_VIEW 
+                            "Open a sample flexible form view (CNSFlexFormView)"
+    ID_DEMO_FLEXIBLEPROPERTY_SHEET_VIEW 
+                            "Open a sample flexible property sheet view (CNSFlexPropertySheetView)"
+    ID_DEMO_INTRODUCTION    "Preferences"
+    ID_DEMO_FLEXIBLE_PROPERTY_SHEET_VIEW 
+                            "Open a sample flexible property sheet view (CNSFlexPropertySheetView)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Dfs.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
