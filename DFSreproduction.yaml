@@ -31,12 +31,12 @@ keywords: ten years reproducibility challenge, neruoscience, operant elarning, T
 #   see https://guides.github.com/activities/citable-code/
 code:
   - url: https://github.com/brembs/DFS_reproduction/tree/master/evaluation_code
-  - doi: 
+  - doi: https://archive.softwareheritage.org/browse/origin/https://github.com/brembs/DFS_reproduction
 
 # Data URL and DOI (optional if no data)
 data:
   - url: https://github.com/brembs/DFS_reproduction/data
-  - doi:
+  - doi: https://archive.softwareheritage.org/browse/origin/https://github.com/brembs/DFS_reproduction
 
 # Information about the original article that has been replicated
 replication:
